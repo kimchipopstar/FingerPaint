@@ -7,23 +7,56 @@
 //
 
 #import "ViewController.h"
+#import "PaintingView.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet PaintingView *paintView;
 
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    UITouch *touch = [touches anyObject];
+    CGPoint point = [touch locationInView:self.paintView];
+    NSLog(@"%@",NSStringFromCGPoint(point));
+    [self.paintView moveToPoint:point];
 }
 
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    UITouch *touch = [touches anyObject];
+    CGPoint point = [touch locationInView:self.paintView];
+    NSLog(@"%@",NSStringFromCGPoint(point));
+    [self.paintView drawLineToPoint:point];
+}
+
+- (IBAction)blackTapped:(UIButton *)sender {
+    self.paintView.color = [UIColor blackColor];
+}
+
+- (IBAction)blueTapped:(UIButton *)sender {
+     self.paintView.color = [UIColor blueColor];
+}
+
+- (IBAction)redTapped:(UIButton *)sender {
+    self.paintView.color = [UIColor redColor];
+}
 
 @end
+
+//[super viewDidLoad];
+//
+//UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panned:)];
+//[self.paintView addGestureRecognizer:panGesture];
+//
+//}
+//
+//-(void)panned:(UIPanGestureRecognizer*)sender{
+//    
+//}
