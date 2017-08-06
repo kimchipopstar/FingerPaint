@@ -38,14 +38,18 @@
 
 - (IBAction)blackTapped:(UIButton *)sender {
     self.paintView.color = [UIColor blackColor];
+    self.paintView.colorNumber = 1;
 }
 
 - (IBAction)blueTapped:(UIButton *)sender {
      self.paintView.color = [UIColor blueColor];
+    self.paintView.colorNumber = 2;
 }
 
 - (IBAction)redTapped:(UIButton *)sender {
     self.paintView.color = [UIColor redColor];
+    
+    self.paintView.colorNumber = 3;
 }
 
 @end

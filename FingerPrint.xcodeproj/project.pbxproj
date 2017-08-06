@@ -14,6 +14,7 @@
 		4DF1B0371F359A37005FF03C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1B0351F359A37005FF03C /* LaunchScreen.storyboard */; };
 		4DF1B0431F359CAE005FF03C /* PaintingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1B0421F359CAE005FF03C /* PaintingView.m */; };
 		4DF1B0441F35C45A005FF03C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1B02E1F359A37005FF03C /* ViewController.m */; };
+		4DF1B0471F365B2C005FF03C /* LineAndColorSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1B0461F365B2C005FF03C /* LineAndColorSaver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		4DF1B0381F359A37005FF03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DF1B0411F359CAE005FF03C /* PaintingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaintingView.h; path = ../PaintingView.h; sourceTree = "<group>"; };
 		4DF1B0421F359CAE005FF03C /* PaintingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaintingView.m; path = ../PaintingView.m; sourceTree = "<group>"; };
+		4DF1B0451F365B2C005FF03C /* LineAndColorSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineAndColorSaver.h; sourceTree = "<group>"; };
+		4DF1B0461F365B2C005FF03C /* LineAndColorSaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineAndColorSaver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				4DF1B02E1F359A37005FF03C /* ViewController.m */,
 				4DF1B0411F359CAE005FF03C /* PaintingView.h */,
 				4DF1B0421F359CAE005FF03C /* PaintingView.m */,
+				4DF1B0451F365B2C005FF03C /* LineAndColorSaver.h */,
+				4DF1B0461F365B2C005FF03C /* LineAndColorSaver.m */,
 				4DF1B0331F359A37005FF03C /* Assets.xcassets */,
 				4DF1B0351F359A37005FF03C /* LaunchScreen.storyboard */,
 				4DF1B0381F359A37005FF03C /* Info.plist */,
@@ -158,6 +163,7 @@
 				4DF1B02C1F359A37005FF03C /* AppDelegate.m in Sources */,
 				4DF1B0431F359CAE005FF03C /* PaintingView.m in Sources */,
 				4DF1B0441F35C45A005FF03C /* ViewController.m in Sources */,
+				4DF1B0471F365B2C005FF03C /* LineAndColorSaver.m in Sources */,
 				4DF1B0291F359A37005FF03C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +321,7 @@
 				4DF1B03D1F359A37005FF03C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

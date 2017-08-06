@@ -11,6 +11,7 @@
 @interface PaintingView : UIView
 
 @property UIColor *color;
+@property NSUInteger colorNumber;
 
 
 -(void)moveToPoint:(CGPoint)point;

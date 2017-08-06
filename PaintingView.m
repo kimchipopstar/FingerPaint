@@ -7,10 +7,14 @@
 //
 
 #import "PaintingView.h"
+#import "LineAndColorSaver.h"
 
 @interface PaintingView ()
 
+@property NSMutableArray *lineArray;
 @property UIBezierPath *path;
+@property LineAndColorSaver *lineColor;
+
 
 @end
 
@@ -20,8 +24,12 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        _path = [UIBezierPath bezierPath];
-        [_path setLineWidth:5.0];
+        
+        _lineColor = [LineAndColorSaver new];
+        _lineArray = [NSMutableArray new];
+        _path = [UIBezierPath new];
+        [self.path setLineWidth:5.0];
+        
     }
     return self;
 }
@@ -30,8 +38,11 @@
 {
     self = [super initWithCoder:coder];
     if (self) {
-        _path = [UIBezierPath bezierPath];
-        [_path setLineWidth:5.0];
+        _lineColor = [LineAndColorSaver new];
+        _lineArray = [NSMutableArray new];
+        _path = [UIBezierPath new];
+        [self.path setLineWidth:5.0];
+        
     }
     return self;
 }
@@ -40,27 +51,43 @@
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
-    
-    [self.color setStroke];
-    
+
     [self.path stroke];
+    
+    
 }
+
 
 -(void)moveToPoint:(CGPoint)point{
     
-    [self.path moveToPoint:point];
-
+    NSValue *value = [NSValue valueWithCGPoint:point];
+    self.lineColor.color = self.color;
+    [self.lineColor.color setStroke];
+    [self.lineColor.lines addObject:value];
+    [self.lineArray addObject:self.lineColor.lines];
+    
+    for (int i=0; i < [self.lineColor.lines count]; i++) {
+        NSValue *valueFromArray = [self.lineColor.lines objectAtIndex:i];
+        CGPoint pointFromValue = [valueFromArray CGPointValue];
+        [self.path moveToPoint:pointFromValue];
+        
+    }
+    
 }
 
 -(void)drawLineToPoint:(CGPoint)point{
     
     [self.path addLineToPoint:point];
-    
     [self setNeedsDisplay];
-
+    
 }
 
-
+//for (int i=0; i < [self.lineColor.lines count]; i++) {
+//
+//    [self.lineColor.color setStroke];
+//    [self.path moveToPoint:pointFromValue];
+//    
+//}
 
 
 @end
