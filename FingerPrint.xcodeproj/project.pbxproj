@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D2D9C271F3F9DDC005F089E /* PointsAndColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2D9C261F3F9DDC005F089E /* PointsAndColor.m */; };
 		4DF1B0291F359A37005FF03C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1B0281F359A37005FF03C /* main.m */; };
 		4DF1B02C1F359A37005FF03C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1B02B1F359A37005FF03C /* AppDelegate.m */; };
 		4DF1B0321F359A37005FF03C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1B0301F359A37005FF03C /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D2D9C251F3F9DDC005F089E /* PointsAndColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PointsAndColor.h; path = ../PointsAndColor.h; sourceTree = "<group>"; };
+		4D2D9C261F3F9DDC005F089E /* PointsAndColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PointsAndColor.m; path = ../PointsAndColor.m; sourceTree = "<group>"; };
 		4DF1B0241F359A37005FF03C /* FingerPrint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerPrint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF1B0281F359A37005FF03C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4DF1B02A1F359A37005FF03C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				4DF1B02E1F359A37005FF03C /* ViewController.m */,
 				4DF1B0411F359CAE005FF03C /* PaintingView.h */,
 				4DF1B0421F359CAE005FF03C /* PaintingView.m */,
+				4D2D9C251F3F9DDC005F089E /* PointsAndColor.h */,
+				4D2D9C261F3F9DDC005F089E /* PointsAndColor.m */,
 				4DF1B0331F359A37005FF03C /* Assets.xcassets */,
 				4DF1B0351F359A37005FF03C /* LaunchScreen.storyboard */,
 				4DF1B0381F359A37005FF03C /* Info.plist */,
@@ -158,6 +163,7 @@
 				4DF1B02C1F359A37005FF03C /* AppDelegate.m in Sources */,
 				4DF1B0431F359CAE005FF03C /* PaintingView.m in Sources */,
 				4DF1B0441F35C45A005FF03C /* ViewController.m in Sources */,
+				4D2D9C271F3F9DDC005F089E /* PointsAndColor.m in Sources */,
 				4DF1B0291F359A37005FF03C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +321,7 @@
 				4DF1B03D1F359A37005FF03C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

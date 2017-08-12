@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "PaintingView.h"
 
+
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet PaintingView *paintView;
