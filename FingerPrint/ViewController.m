@@ -50,14 +50,3 @@
 }
 
 @end
-
-//[super viewDidLoad];
-//
-//UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panned:)];
-//[self.paintView addGestureRecognizer:panGesture];
-//
-//}
-//
-//-(void)panned:(UIPanGestureRecognizer*)sender{
-//    
-//}

@@ -18,16 +18,6 @@
 
 @implementation PaintingView
 
-//- (instancetype)initWithFrame:(CGRect)frame
-//{
-//    self = [super initWithFrame:frame];
-//    if (self) {
-//        _path = [UIBezierPath bezierPath];
-//        [_path setLineWidth:5.0];
-//    }
-//    return self;
-//}
-
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
     self = [super initWithCoder:coder];
@@ -39,8 +29,6 @@
 }
 
 
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     
     for(int i = 0; i < self.lines.count; i++){
@@ -74,7 +62,6 @@
     NSValue *value = [NSValue valueWithCGPoint:point];
     [pointsAndColor.points addObject:value];
     [self.lines addObject:pointsAndColor];
-//    [self.path moveToPoint:point];
 
 }
 
